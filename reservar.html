@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reservar.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <title>Voos</title>
+</head>
+
+<body>
+
+  <div class="container py-3">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4">
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 montserrat-semibold"
+        style="font-size: 14px;">
+        <li class="nav-item">
+          <a href="http://localhost:8080/" class="d-flex align-items-center"
+            style="color: var(--color-prin); text-decoration: none;">
+            <img src=" /img/reservar/header/home.svg" style="width: 20px; margin-right: 7px;">
+            Página Inicial
+          </a>
+        </li>
+      </ul>
+
+      <div class="col-md-3 mx-auto mb-2 mb-md-0 text-center">
+        <a href="/" class="d-inline-flex link-body-emphasis">
+          <img src="/logos/logo-dark.svg" width="110.35px" alt="Logo da empresa flight.">
+        </a>
+      </div>
+
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 montserrat-semibold"
+        style="font-size: 14px;">
+        <li class="nav-item">
+          <a href="#" class="d-flex align-items-center" style=" color:var(--color-prin); text-decoration: none;">
+            <img src="/img/reservar/header/aviao.svg" style="width: 20px; margin-right: 7px;">
+            Acompanhar Voo
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="d-flex justify-content-center" id="section-reserva">
+      <div class="menu-search flex-column" style="width: 100%;">
+        <div class="py-4 d-flex montserrat-14px">
+
+          <div class="search-container">
+            <div class="search-input">
+              <input type="text" id="input-box" placeholder="Origem" autocapitalize="off">
+              <div class="result-box"></div>
+            </div>
+            <div class="">
+              <img src="/img/home/header/exchange.svg" style="width: 24px;" alt="">
+            </div>
+            <div class="search-input-b">
+              <input type="text" id="input-box-b" placeholder="Destino" autocapitalize="off">
+              <div class="result-box-b"></div>
+            </div>
+          </div>
+
+          <div class="d-flex px-4 justify-content-md-between align-items-center montserrat-14px">
+            <div class="date-input">
+              <label for="ida">Ida</label>
+              <input type="date" id="ida" class="date-form" placeholder="Selecione a data"
+                style="border-radius: 4px 0px 0px 4px;">
+            </div>
+            <div class="icon-dt">
+              <img src="/img/home/header/calendar.svg" style="width: 24px;" alt="">
+            </div>
+            <div class="date-input">
+              <label for="volta">Volta</label>
+              <input type="date" id="volta" class="date-form montserrat-14px" placeholder="Selecione a data"
+                style="border-radius: 0px 4px 4px 0px;">
+            </div>
+          </div>
+
+          <select class="form-select montserrat-14px" style="padding: 10px 30px 10px 10px;"
+            aria-label="Default select example">
+            <option selected>Econômica</option>
+            <option value="1">Premium Economy</option>
+            <option value="2">Executiva/Business</option>
+            <option value="3">Primeira Classe</option>
+          </select>
+
+        </div>
+
+        <div class="d-flex justify-content-md-between">
+
+          <div class="person-info">
+            <div class="montserrat-14px">
+              <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+              <label class="btn" style="padding: 10px;" for="option5">Apenas Ida</label>
+
+              <input type="radio" class="btn-check montserrat-14px" name="options-base" id="option6" autocomplete="off">
+              <label class="btn montserrat-14px" style="padding: 10px;" for="option6">Ida e Volta</label>
+            </div>
+            <div>
+              <select class="form-select montserrat-14px" style="padding: 10px 30px 10px 10px;"
+                aria-label="Default select example">
+                <option selected>1 Adulto</option>
+                <option value="1">2 Adultos</option>
+                <option value="2">3 Adultos</option>
+                <option value="3">4 Adultos</option>
+                <option value="3">5 Adultos</option>
+                <option value="3">6 Adultos</option>
+                <option value="3">7 Adultos</option>
+              </select>
+            </div>
+
+            <div class="flex-column justify-content-center montserrat-14px">
+              <select class="form-select montserrat-14px" style="padding: 10px 30px 10px 10px;"
+                aria-label="Default select example">
+                <option selected>1 Criança</option>
+                <option value="1">2 Crianças</option>
+                <option value="2">3 Crianças</option>
+                <option value="3">4 Crianças</option>
+                <option value="3">5 Crianças</option>
+                <option value="3">6 Crianças</option>
+                <option value="3">7 Crianças</option>
+              </select>
+              <p style="color: var(--bs-tertiary-color); font-size: 12px; padding-top: 5px; margin: 0;">* Até 17 anos.
+              </p>
+            </div>
+          </div>
+          <div>
+            <button class="btn-search-flight montserrat-14px d-flex align-items-center justify-content-center px-3">
+              <img src="/img/home/header/paper-plane.svg" class="icon-btn-search" alt="">
+              Buscar Voos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- 
+
+AQUI FICARAM OS CARDS COM AS PASSAGENS
+
+-->
+
+  <div class="container voo-result">
+
+
+    <div class="voo">
+      <div>
+        <img src="/img/reservar/voos/gol.png" width="100px" alt="Logo da empresa de linhas aéreas">
+      </div>
+      <div class="voo-info">
+        <div class="voo-price">
+          <h1>Voe com a Gol</h1>
+          <div class="voo-price-info">
+            <div class="voo-price-r">
+              <span>R$</span>
+              <h1>1.900</h1>
+            </div>
+            <p>Todas as taxas incluídas</p>
+          </div>
+        </div>
+        <div class="voo-details">
+          <div class="voo-title">
+            <h1>Ida</h1>
+            <div class="voo-hour">
+              <p>12:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">2h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+          <div class="voo-title">
+            <h1>Volta</h1>
+            <div class="voo-hour">
+              <p>13:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">1h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="voo-buy">
+          <button>
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="voo">
+      <div>
+        <img src="/img/reservar/voos/gol.png" width="100px" alt="Logo da empresa de linhas aéreas">
+      </div>
+      <div class="voo-info">
+        <div class="voo-price">
+          <h1>Voe com a Gol</h1>
+          <div class="voo-price-info">
+            <div class="voo-price-r">
+              <span>R$</span>
+              <h1>1.900</h1>
+            </div>
+            <p>Todas as taxas incluídas</p>
+          </div>
+        </div>
+        <div class="voo-details">
+          <div class="voo-title">
+            <h1>Ida</h1>
+            <div class="voo-hour">
+              <p>12:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">2h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+          <div class="voo-title">
+            <h1>Volta</h1>
+            <div class="voo-hour">
+              <p>13:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">1h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+        </div>
+        <div class="voo-buy">
+          <button>
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="voo">
+      <div>
+        <img src="/img/reservar/voos/gol.png" width="100px" alt="Logo da empresa de linhas aéreas">
+      </div>
+      <div class="voo-info">
+        <div class="voo-price">
+          <h1>Voe com a Gol</h1>
+          <div class="voo-price-info">
+            <div class="voo-price-r">
+              <span>R$</span>
+              <h1>1.900</h1>
+            </div>
+            <p>Todas as taxas incluídas</p>
+          </div>
+        </div>
+        <div class="voo-details">
+          <div class="voo-title">
+            <h1>Ida</h1>
+            <div class="voo-hour">
+              <p>12:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">2h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+          <div class="voo-title">
+            <h1>Volta</h1>
+            <div class="voo-hour">
+              <p>13:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">1h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+        </div>
+        <div class="voo-buy">
+          <button>
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="voo">
+      <div>
+        <img src="/img/reservar/voos/gol.png" width="100px" alt="Logo da empresa de linhas aéreas">
+      </div>
+      <div class="voo-info">
+        <div class="voo-price">
+          <h1>Voe com a Gol</h1>
+          <div class="voo-price-info">
+            <div class="voo-price-r">
+              <span>R$</span>
+              <h1>1.900</h1>
+            </div>
+            <p>Todas as taxas incluídas</p>
+          </div>
+        </div>
+        <div class="voo-details">
+          <div class="voo-title">
+            <h1>Ida</h1>
+            <div class="voo-hour">
+              <p>12:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">2h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+          <div class="voo-title">
+            <h1>Volta</h1>
+            <div class="voo-hour">
+              <p>13:00</p>
+              <div class="voo-dir">
+                <span>Direto</span>
+                <hr>
+              </div>
+              <p>14:50</p>
+              <span class="voo-span-hour">1h50</span>
+              <img src="/img/reservar/voos/bags.svg" width="30px" alt="Bagagens">
+            </div>
+          </div>
+        </div>
+        <div class="voo-buy">
+          <button>
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- 
+
+AQUI FICARAM OS CARDS COM AS PASSAGENS
+
+-->
+
+
+
+  <div style="background-color: #fff;">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0" style="color: var(--color-prin);">© 2024 Flightcy</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="/logos/logo-dark.svg" width="90px" alt="Logo da empresa flight.">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2" style="color: var(--color-prin);">Página Inicial</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link px-2" style="color: var(--color-prin);">Acompanhar Voo</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="/js/home/autocomplete.js"></script>
+</body>
+
+</html>

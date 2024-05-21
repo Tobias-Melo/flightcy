@@ -1,0 +1,353 @@
+/*
+     RESET CSS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+ol, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.abril-font {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.tradegothic-font {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+  } 
+  
+.montserrat-semibold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-14px {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Variaveis */
+:root {
+  --color-prin: #0C1F3A;
+  --color-secun: #2A82E9;
+  --color-terc: #fff;
+  --color-gray: #9BA4B5;
+  --color-green: #03a691;
+}
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    background-color: #FAFBFC;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.voos-h {
+  padding: 15px 5px;
+  border-bottom: 3px var(--color-secun) solid;
+  max-width: fit-content;
+}
+
+.menu-search {
+  background-color: var(--color-terc);
+  border-radius: 16px;
+  padding: 16px 32px 32px 20px;
+  box-shadow: 0px 4px 16px rgba(42, 130, 233, 0.15);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.search-input {
+  position: relative;
+  align-items: center;
+}
+
+
+.search-input input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.result-box {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--color-terc);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 5px;
+  width: 600px; 
+  min-width: 200px; 
+  overflow-y: auto;
+}
+
+.icon-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.icon-s img {
+  width: 24px;
+}
+
+.result-box ul li:hover {
+  background-color: #e9f3ff;
+  cursor: pointer;
+}
+
+/* DESTINO */
+.search-input-b {
+  position: relative;
+  align-items: center;
+}
+.search-input-b input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.result-box-b {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--color-terc);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 5px;
+  width: 600px; 
+  min-width: 200px; 
+  overflow-y: auto;
+}
+.result-box-b ul li:hover {
+  background-color: #e9f3ff;
+  cursor: pointer;
+}
+
+.icon-dt {
+  background-color: #dee2e6; 
+  width: 100%;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+
+.date-input {
+  position: relative;
+  width: 100%;
+  color: #000000;
+}
+
+.date-input label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Ajuste conforme necessário */
+  pointer-events: none; /* Evita que o rótulo seja clicável */
+  color: var(--color-secun); /* Cor opcional */
+}
+
+.date-form {
+  width: 170px; /* Ajusta a largura para levar em conta o espaço do rótulo */
+  padding: 10px;
+  padding-left: 54px; /* Leva em conta o espaço ocupado pelo rótulo */
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.icon-btn-search {
+  width: 14px;
+}
+
+.btn-search-flight {
+  padding: 11.5px;
+  border-radius: 4px;
+  border: none;
+  color: var(--color-terc);
+  column-gap: 5px;
+  background-color: var(--color-secun);
+}
+
+.btn-search-flight:hover {
+  opacity: 0.95;
+}
+
+.voo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-terc);
+  box-shadow: 0px 4px 16px rgba(42, 130, 233, 0.15);
+  border-radius: 12px;
+  padding: 40px;
+  width: max-content;
+  align-items: center;
+  justify-items: center;
+  width: 49%;
+  column-gap: 50px;
+  z-index: 999;
+}
+
+.voo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.voo-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.voo-title {
+  display: flex;
+  flex-direction: column;
+}
+.voo-title h1{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0 ;
+  margin: 0;
+}
+
+.voo-dir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.voo-dir hr{
+  margin: 0;
+  width: 40%;
+  opacity: 1;
+  color: var(--color-green);
+}
+.voo-dir span{
+  padding: 0px 50px;
+  color: var(--color-green);
+}
+
+.voo-hour {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.voo-hour p{
+  margin: 0;
+  padding: 0;
+}
+.voo-span-hour{
+  color: var(--color-gray);
+}
+
+.voo-buy {
+  padding: 5px;
+  margin-top: 10px;
+}
+.voo-buy button{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: var(--color-secun);
+  color: var(--color-terc);
+  font-weight: 500;
+  border-radius: 4px;
+}
+.voo-buy button:hover{
+  opacity: 0.95;
+}
+
+.voo-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.55);
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.voo-price h1{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+.voo-price-r {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+.voo-price-r span{
+  font-size: 12px;
+}
+
+.voo-price-info {
+  display: flex;
+  flex-direction: column;
+}
+.voo-price-info p {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.voo-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
