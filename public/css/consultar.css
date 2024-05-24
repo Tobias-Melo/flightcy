@@ -130,3 +130,13 @@ body{
   background-color: var(--color-gray);
   opacity: 0.3;
 }
+
+#no-ticket {
+  display: flex;
+  width: 100%;
+  padding: 90px 0; 
+  font-size: 50px; 
+  font-weight: 800; 
+  color: var(--color-gray); 
+  opacity: 0.5;
+}

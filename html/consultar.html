@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/consultar.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <title>Acompanhamento</title>
+</head>
+
+<body>
+  <div class="container py-4">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white rounded-3" style="background-color: var(--color-prin);">
+          <h2>Busque seu voo</h2>
+          <p>Insira o número de bilhete fornecido para ver as atualizações do seu voo.</p>
+          <form class="d-flex flex-column row-gap-3" id="form-search-ticket">
+            <input placeholder="Digite aqui seu número de bilhete" type="text" class="form-control" required
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="ticket">
+            <button class="btn btn-primary" type="submit" id="btn-search-ticket">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 border rounded-3"
+          style="background-image: url(/img/home/us/us-banner.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+  AQUI ESTARAO AS INFORMACOES DO VOO
+
+ -->
+    <div class="card-reserve-2">
+
+    </div>
+
+    <div class="align-items-center justify-content-center" id="no-ticket">
+        Sem informações de Voo
+    </div>
+
+  </div>
+
+  <!-- 
+
+  ACIMA ESTARAO AS INFORMACOES DO VOO
+
+ -->
+
+  <div class="pb-3 container">
+    <p style="margin: 0; font-size: 12px; color: var(--color-prin);">
+      As informações contidas acima são referentes a reserva adquirida pelo passageiro, para qualquer outra informação
+      basta entrar em contato com a nossa agencia através dos canais contidos na <a href="http://localhost:8080/">página
+        inicial</a>.
+      <br>
+      Para fazer o <strong>check-in</strong>, <strong>selecionar o assento</strong>, e <strong>saber o portão de
+        embarque</strong>, visite o site da sua linha aérea
+      e use o mesmo número de bilhete.
+    </p>
+  </div>
+
+  <div style="background-color: #fff;">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
+        <p class="col-md-4 mb-0" style="color: var(--color-prin);">© 2024 Flightcy</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="/logos/logo-dark.svg" width="90px" alt="Logo da empresa flight.">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="http://localhost:8080/" class="nav-link px-2"
+              style="color: var(--color-prin);">Página Inicial</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="/js/consultar/consult.js"></script>
+</body>
+</html>

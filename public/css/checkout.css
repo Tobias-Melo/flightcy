@@ -70,3 +70,36 @@ body{
     background-color: #FAFBFC;
     font-family: "Montserrat", sans-serif;
 }
+
+#copied {
+  display: none;
+}
+
+#copied-img {
+  display: none;
+}
+
+#ticket-copy {
+  display: flex;
+}
+
+#crianca-1,
+#crianca-2,
+#crianca-3,
+#crianca-4,
+#crianca-5,
+#crianca-6,
+#crianca-7,
+#adulto-2,
+#adulto-3,
+#adulto-4,
+#adulto-5,
+#adulto-6,
+#adulto-7,
+#hr-adulto,
+#hr-crianca,
+#h1-adulto,
+#h1-crianca {
+  display: none;
+  flex-direction: column;
+}
