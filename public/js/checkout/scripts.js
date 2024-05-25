@@ -28,14 +28,20 @@ function renderVooDetails() {
   const vooInfosDiv = document.getElementById('voo-infos');
   const params = getURLParams();
   const adults = parseInt(localStorage.getItem('adults') || '0');
-  const children = parseInt(localStorage.getItem('children') || '0');
+  const storedValueChildren = localStorage.getItem('children') || '0';
+
+  if (!isNaN(storedValueChildren) && storedValueChildren.trim() !== "") {
+    var children = parseInt(storedValueChildren);
+  } else {
+    var children = 0;
+  }
 
   if (adults > 1) {
     showElements(adults, 'adulto');
     document.getElementById('hr-adulto').style.display = 'flex';
     document.getElementById('h1-adulto').style.display = 'flex';
   }
-  
+
   if (children > 0) {
     showElements(children, 'crianca');
     document.getElementById('hr-crianca').style.display = 'flex';
