@@ -17,7 +17,22 @@ Flightcy foi um projeto desenvolvido durante o 5º semestre da minha faculdade d
 O projeto foi bem desafiador, pois foi meu primeiro contato com NodeJS e Express, pude aprender bastante e colocar os meus estudos em prática.
 <br>
 <br>
-Abaixo a landing page do projeto:
+Abaixo a landing page do projeto (não pare de rolar, há todas as páginas abaixo):
 <br>
 
-<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/home/home.png">
+<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/home.png">
+<br>
+Os voos de acordo com os critérios inseridos no formulário:
+<br>
+<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/voos.png">
+
+<br>
+A página de pagamento da reserva:
+<br>
+<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/pagamento.png">
+
+
+<br>
+Por fim, a página de consulta da reserva:
+<br>
+<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/consultar.png">
