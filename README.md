@@ -10,4 +10,13 @@
 </p>
 </div>
 
+<hr>
+
+Flightcy foi um projeto desenvolvido durante o 5º semestre da minha faculdade de Análise e Desenvolvimento de Sistemas. A Flightcy é uma agência especializada na reserva de voos, criada com o objetivo de tornar a experiência de planejamento de viagens mais simples, eficiente e acessível para todos os tipos de viajantes. <br>
+<br>
+O projeto foi bem desafiador, pois foi meu primeiro contato com NodeJS e Express, pude aprender bastante e colocar os meus estudos em prática.
+<br>
+<br>
+Abaixo a landing page do projeto:
+<br>
 
