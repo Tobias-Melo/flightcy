@@ -20,4 +20,4 @@ O projeto foi bem desafiador, pois foi meu primeiro contato com NodeJS e Express
 Abaixo a landing page do projeto:
 <br>
 
-<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/home/home_.svg" width="200px">
+<img src="https://raw.githubusercontent.com/Tobias-Melo/flightcy/main/public/img/home/home.png">
